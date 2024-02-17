@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --clr-blue: #1a91f0;
-  --clr-blue-mid: #1170cd;
-  --clr-blue-dark: #1a1c6a;
+  --clr-blue: #1a90f0d3;
+  --clr-blue-mid: #116fcdc7;
+  --clr-blue-dark: #1a1b6ae7;
   --clr-white: #fff;
   --clr-bright: #eff2f9;
   --clr-dark: #1e2532;
@@ -336,9 +336,8 @@ a {
 }
 
 .navbar-brand-icon {
-  width: 25px;
+  width: 45px;
   margin-right: 6px;
-  opacity: 0.8;
 }
 
 .brand-and-toggler {
@@ -458,8 +457,12 @@ a {
   color: var(--clr-grey);
 }
 
-.footer-content p span {
+.footer-content p a {
   color: var(--clr-white);
+}
+
+.footer-content p a:hover {
+  text-decoration: underline;
 }
 
 /* media queries */

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home Page</title>
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" /> 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
@@ -15,8 +16,8 @@
                 <div class = "navbar-content">
                     <div class = "brand-and-toggler">
                         <a href = "index.html" class = "navbar-brand">
-                            <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
-                            <span class = "navbar-brand-text">build <span>resume.</span>
+                            <img src = "assets/images/favicon.ico" alt = "" class = "navbar-brand-icon">
+                            <span class = "navbar-brand-text"><span> Resume.io</span>
                         </a>
                         <button type = "button" class = "navbar-toggler-btn">
                             <div class = "bars">
@@ -50,7 +51,7 @@
                     </div>
                     <div class = "section-one-r text-center">
                         <h2 class = "lg-title">Use the best resume maker as your guide!</h2>
-                        <p class = "text">Getting that dream job can seem like an impossible task. We're here to change that. Give yourself a real advantage with the best online resume maker: created by experts, imporved by data, trusted by millions of professionals.</p>
+                        <p class = "text">Getting that dream job can seem like an impossible task. We're here to change that. Give yourself a real advantage with the best online resume maker: created by experts, improved by data, trusted by millions of professionals.</p>
                         <div class = "btn-group">
                             <a href = "resume.html" class = "btn btn-primary text-uppercase">create my resume</a>
                         </div>
@@ -59,14 +60,27 @@
             </div>
         </div>
 
- 
         <footer class = "footer bg-dark">
             <div class="container">
                 <div class = "footer-content text-center">
-                    <p class="fs-15">&copy;Copyright 2022. All Rights Reserved - <span>build.resume</span></p>
+                    <p class="fs-15">&copy; <span id="year"></span>. All Rights Reserved - <a href="https://tusharupadhyay.vercel.app/" target="_blank">Tushar Upadhyay</a></p>
+                    <p id="month_year" class="fs-15"></p>
                 </div>
             </div>
         </footer>
         
     </body>
+    <script>
+        // Get current year and update the year span
+document.getElementById("year").innerText = new Date().getFullYear();
+
+// Get current month and year and update the month_year paragraph
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const now = new Date();
+const month = months[now.getMonth()];
+const year = now.getFullYear();
+document.getElementById("month_year").innerText = month + ' ' + year;
+
+    </script>
+    
 </html>

@@ -358,3 +358,11 @@ function previewImage() {
 function printCV() {
   window.print();
 }
+
+var dt = new Date();
+document.getElementById("dateTime").innerHTML = dt.toLocaleString();
+document.getElementById("year").innerHTML = dt.getFullYear();
+setInterval(function () {
+  dt = new Date();
+  document.getElementById("dateTime").innerHTML = dt.toLocaleString();
+}, 1000);
